@@ -16,7 +16,6 @@ start(_StartType, _StartArgs) ->
         {server_root, "."},
         {document_root, "."},
         {bind_address, "localhost"},
-        {error_log, "error.log"},
         {erl_script_alias, {"/handle", [task]}}
     ],
     %% Start the HTTP server with the configuration

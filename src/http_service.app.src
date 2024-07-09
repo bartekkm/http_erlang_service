@@ -1,5 +1,5 @@
 {application, http_service,
- [{description, "An OTP application"},
+ [{description, "A simple HTTP service"},
   {vsn, "0.1.0"},
   {registered, []},
   {mod, {http_service, []}},

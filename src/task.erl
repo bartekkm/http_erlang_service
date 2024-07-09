@@ -1,3 +1,8 @@
+%%%-------------------------------------------------------------------
+%% @doc Module which handle HTTP requests, decode/encode JSON data
+%%      sort a JSON data and print a bash script representation
+%% @end
+%%%-------------------------------------------------------------------
 -module(task).
 -export([handle_request/3]).
 
@@ -48,7 +53,7 @@ sort_tasks(Task) ->
 
     %% Print in shell a bash script representation of commands
     print_tasks_commands(SortedListOfAllTasks, bash),
-    
+
     SortedListOfAllTasks.
 
 print_tasks_commands(ListOfTasks, bash) ->
